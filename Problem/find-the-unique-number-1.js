@@ -10,4 +10,9 @@ function findUniq(arr) {
 	}
 }
 
+function findUniq2(arr) {
+	let filteredArr = arr.filter((elem, indx) => arr.indexOf(elem) === arr.lastIndexOf(elem))
+	return filteredArr[0];
+}
+
 console.log( findUniq([ 1, 1, 1, 2, 1, 1 ]) ); // 2
